@@ -14,9 +14,6 @@ void setup() {
     delay(200);
     log_d(".");
   }
-
-  spfsettings::settings.updateSettings();
-  Serial.println(spfsettings::settings.getSettingsParameter(std::string("esp_version")).c_str());
 }
 
 void loop() {

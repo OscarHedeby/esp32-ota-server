@@ -6,7 +6,7 @@
 
 namespace ota
 {
-    const std::string currentVersion = "0.0.0";
+    std::string currentVersion = "0.0.0";
 
     unsigned long lastVersionUpdateCheck = 600000;
 

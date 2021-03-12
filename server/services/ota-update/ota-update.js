@@ -13,17 +13,11 @@ const db = admin.firestore();
   Goals:
     - The ESP should be able to ask which version it should run
     - The ESP should be able to download the .bin from google cloud storage
-    - We should be able to roll out newer software versions
-    - We should be able to push updates to individual devices
 
-  Endpoints (/spf/ota/):
+  Endpoints:
     (ESP):
       - GET: version: Returns the version a given ESP device should be running
       - GET: update: Should return the version a given device should update to
-    (Admin):
-      - GET: versions: Should return every available software version
-      - POST: version: Should set the recommended version for all devices
-      - POST: version?deid: Should set the recommended version for a given device
 */
 
 

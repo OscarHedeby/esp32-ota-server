@@ -1,4 +1,0 @@
-runtime: nodejs14
-service: settings
-
-entrypoint: node services/settings/settings.js

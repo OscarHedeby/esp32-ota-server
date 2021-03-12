@@ -20,7 +20,7 @@ namespace ota
 
             const std::string endpoint = "https://www.my-server/version";
 
-            auth::authenticateClient(http, secureWifiClient, endpoint);
+            http.begin(secureWifiClient, endpoint.c_str());
 
             int httpResponseCode = http.GET();
 
@@ -65,7 +65,7 @@ namespace ota
         WiFiClientSecure client;
         client.setInsecure(); // Insecure as DUCK - change to use a cert.
 
-        std::string endpoint = "https://www.my-server/update?version=" + newestVersionFromServer
+        std::string endpoint = "https://www.my-server/update?version=" + newestVersionFromServer;
 
         t_httpUpdate_return ret = httpUpdate.update(client, endpoint.c_str());
 
