@@ -1,0 +1,7 @@
+runtime: nodejs14
+service: ota-update
+
+env_variables:
+  GCLOUD_STORAGE_BUCKET_OTA_UPDATE: ota-update-server
+
+entrypoint: node services/ota-update/ota-update.js

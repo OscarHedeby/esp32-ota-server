@@ -1,0 +1,3 @@
+runtime: nodejs14
+
+entrypoint: node services/default/server.js

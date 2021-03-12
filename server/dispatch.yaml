@@ -1,0 +1,3 @@
+dispatch:
+  - url: '/*'
+    module: ota-update
